@@ -1,6 +1,8 @@
 # i_am_ubuntu
 
-A new Flutter project.
+I Am Ubuntu.
+
+![Logo Ubuntu](images/i_am_ubuntu.gif)
 
 ## Getting Started
 
