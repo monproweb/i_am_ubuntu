@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('I Am Ubuntu'),
+        centerTitle: true,
         leading: TextButton(
           child: Icon(themeName.contains('-light')
               ? Icons.dark_mode
@@ -38,9 +39,11 @@ class _HomePageState extends State<HomePage> {
           },
         ),
       ),
-      body: const Center(
-        child: Image(
-          image: AssetImage('images/logo_ubuntu.png'),
+      body: Center(
+        child: SizedBox(
+          height: MediaQuery.of(context).size.height / 1.5,
+          width: MediaQuery.of(context).size.width / 1.5,
+          child: const Image(image: AssetImage('images/logo_ubuntu.png')),
         ),
       ),
     );
